@@ -1,25 +1,28 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: 'poppins',sans-serif;
+    font-family: 'poppins', sans-serif;
     box-sizing: border-box;
 }
-h1{
+
+h1 {
     text-align: center;
     margin: 100px auto 50px;
     font-weight: 600;
 }
-.search{
-   width: 90%;
-   max-width: 600px;
-   margin: auto;
-   height: 80px;
-   background: #434989;
-   display: flex;
-   align-items: center;
-   border-radius: 8px;
+
+.search {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    height: 80px;
+    background: #434989;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
 }
-.search input{
+
+.search input {
     flex: 1;
     height: 100%;
     border: 0;
@@ -29,7 +32,8 @@ h1{
     font-size: 18px;
     padding: 0 30px;
 }
-.search .btn{
+
+.search .btn {
     padding: 0 40px;
     height: 100%;
     background-color: #ff3929;
@@ -41,7 +45,8 @@ h1{
     border-bottom-right-radius: 8px;
     cursor: pointer;
 }
-#show-more{
+
+#show-more {
     background: #ff3929;
     color: #fff;
     border: 0;
@@ -52,10 +57,65 @@ h1{
     cursor: pointer;
     display: none;
 }
+#data .fa-image{
+    display: flex;
+    position: absolute;
+    font-size: 37px;
+    margin: 0 15em;
+}
+#data h1{
+    position: absolute;
+    margin: 1.3em 9em;
+}
+
 #data{
-    width: 80%;
-    margin: 100px 20px;
     display: grid;
+    position: relative;
+    margin: 100px 40px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap : 40px;
+    grid-gap: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container h1 {
+        margin-right: 30px;
+    }
+
+    .search {
+        max-width: 250px;
+        margin-right: 6em;
+        height: 40px;
+    }
+    .search input {
+        flex: 1;
+        height: 100%;
+        margin-left: -1em;
+
+    }
+    .search .btn {
+        padding: 0 15px;
+        height: 100%;
+        background-color: #ff3929;
+        color: #fff;
+    }
+    #data .fa-image{
+        margin:1em 4.7em;
+        margin-bottom: 1em;
+    }
+    #data h1{
+        margin: 3em 4.7em;
+    }
+    #data{
+       display: grid;
+       position: relative;
+       margin: 40px -30px;
+       background-size: cover;
+       grid-template-columns: 1fr;
+    }
+    #data img{
+        display: grid;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
 }

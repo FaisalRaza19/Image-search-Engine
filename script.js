@@ -6,6 +6,7 @@ const key = "qhHL0kxYe5jDcWyh0uRzl-I6bpEB1y4qvbeXiFzGxoY";
 let keyword = '';
 let page = 1;
 
+
 async function fetchImages() {
     keyword = searchBox.value;
     const url = `https://api.unsplash.com/search/photos?page=${page}&query=${keyword}&client_id=${key}&per_page=16`;
